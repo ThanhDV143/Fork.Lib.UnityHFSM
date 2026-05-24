@@ -1,18 +1,29 @@
 {
-  "name": "com.inspiaaa.unityhfsm",
+  "name": "thanhdv.fork.inspiaaa.unityhfsm",
   "displayName": "UnityHFSM",
   "description": "A fast, tried-and-tested hierarchical finite state machine library for Unity, designed to be easy to use yet powerful without compromising performance.",
-
+  "unity": "2022.3",
   "version": "2.3.0",
   "license": "MIT",
-  "keywords": ["fsm", "hierarchical", "state-machine"],
-  "documentationUrl": "https://github.com/Inspiaaa/UnityHFSM",
-
+  "keywords": [
+    "fsm",
+    "hierarchical",
+    "state-machine"
+  ],
+  "documentationUrl": "https://github.com/ThanhDV143/Fork.Lib.UnityHFSM",
   "author": {
     "name": "Inspiaaa",
     "url": "https://github.com/Inspiaaa"
   },
-
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThanhDV143/Fork.Lib.UnityHFSM.git"
+  },
+  "changelogUrl": "https://github.com/ThanhDV143/Fork.Lib.UnityHFSM/blob/master/Changelog.md",
+  "publishConfig": {
+    "registry": "https://upm.thanhdv.com/"
+  },
   "samples": [
     {
       "displayName": "Guard AI",

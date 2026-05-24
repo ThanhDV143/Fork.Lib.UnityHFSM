@@ -1,14 +1,10 @@
-![HFSM for Unity](https://raw.githubusercontent.com/Inspiaaa/UnityHFSM/ad3a59ad2dbcded72ef0a1fc9374a26d770f81b6/docs%7E/Banner.png)
+![HFSM for Unity](https://raw.githubusercontent.com/ThanhDV143/Fork.Lib.UnityHFSM/master/docs%7E/Banner.png)
 
 <p align="center">
-  <a href="https://github.com/Inspiaaa/UnityHFSM">
+  <a href="https://github.com/ThanhDV143/Fork.Lib.UnityHFSM">
     <img src="https://img.shields.io/badge/Unity-C%23-blue.svg?&logo=unity" /></a>
-  <a href="https://github.com/Inspiaaa/UnityHFSM/blob/master/LICENSE.md" alt="GitHub license">
+  <a href="https://github.com/ThanhDV143/Fork.Lib.UnityHFSM/blob/master/LICENSE.md" alt="GitHub license">
     <img src="https://img.shields.io/badge/License-MIT-green.svg" /></a>
-  <a href="https://github.com/Inspiaaa/UnityHFSM/releases" alt="GitHub release">
-    <img src="https://img.shields.io/github/release/Inspiaaa/UnityHFSM.svg" /></a>
-  <a href="https://openupm.com/packages/com.inspiaaa.unityhfsm/">
-    <img src="https://img.shields.io/npm/v/com.inspiaaa.unityhfsm?label=openupm&registry_uri=https://package.openupm.com" /></a>
 </p>
 
 A simple yet powerful **hierarchical finite state machine** for the Unity game engine. It is scalable and customisable by being **class-based**, but also supports functions (lambdas) for **rapid prototyping**.
@@ -47,9 +43,9 @@ It has a special focus on the temporal aspects of state transitions, making it i
 
 **In the wiki:**
 
-- [Full overview over features](https://github.com/Inspiaaa/UnityHFSM/wiki/Feature-Overview)
+- [Full overview over features](https://github.com/ThanhDV143/Fork.Lib.UnityHFSM/wiki/Feature-Overview)
 
-- [How to use UnityHFSM outside of Unity](https://github.com/Inspiaaa/UnityHFSM/wiki/Using-UnityHFSM-outside-of-Unity)
+- [How to use UnityHFSM outside of Unity](https://github.com/ThanhDV143/Fork.Lib.UnityHFSM/wiki/Using-UnityHFSM-outside-of-Unity)
 
 **Table of contents:**
 
@@ -77,23 +73,23 @@ It has a special focus on the temporal aspects of state transitions, making it i
 
 ### Unity Package
 
-To get started, download the latest version of UnityHFSM from the [Releases](https://github.com/Inspiaaa/UnityHFSM/releases) page. Simply extract the zip file and put the folder anywhere in your `Assets` folder. Et voilà, you're ready to go!
+To get started, download the latest version of UnityHFSM from the [Releases](https://github.com/ThanhDV143/Fork.Lib.UnityHFSM/releases) page. Simply extract the zip file and put the folder anywhere in your `Assets` folder. Et voilà, you're ready to go!
 
 ### UPM Package
 
 <details>
-<summary>Add from OpenUPM <em>| via scoped registry</em></summary>
+<summary>Add from private UPM registry <em>| via scoped registry</em></summary>
 
-To add OpenUPM to your project:
+To add the private UPM registry to your project:
 
 - Open `Edit/Project Settings/Package Manager`
 
 - Add a new Scoped Registry:
   
   ```
-  Name: OpenUPM
-  URL:  https://package.openupm.com/
-  Scope(s): com.inspiaaa.unityhfsm
+  Name: ThanhDV UPM
+  URL:  https://upm.thanhdv.com/
+  Scope(s): thanhdv
   ```
 
 - Click <kbd>Save</kbd>
@@ -115,9 +111,8 @@ You can also add it directly from GitHub on Unity 2019.4+. Note that you won't b
 - Click <kbd>+</kbd>
 - Select <kbd>Add from Git URL</kbd>
 - Paste
-  - `https://github.com/Inspiaaa/UnityHFSM.git#upm` for the latest stable release (**recommended**)
-  - `https://github.com/Inspiaaa/UnityHFSM.git#release` for the development version
-  - `https://github.com/Inspiaaa/UnityHFSM.git#v1.8.0` for a specific version (`v1.8.0` here)
+  - `https://github.com/ThanhDV143/Fork.Lib.UnityHFSM.git` for the latest version
+  - `https://github.com/ThanhDV143/Fork.Lib.UnityHFSM.git#v2.0.0` for a specific version (`v2.0.0` here)
 - Click <kbd>Add</kbd>
 - Tip: If you're using VSCode, and you're not getting any IntelliSense, you may have to regenerate the `.csproj` project files (<kbd>Edit</kbd> > <kbd>Preferences</kbd> > <kbd>External Tools</kbd> > <kbd>Regenerate project files</kbd>)
 
@@ -131,7 +126,7 @@ You can also add it directly from GitHub on Unity 2019.4+. Note that you won't b
 
 Here's a simple state machine for an enemy spy in a game.
 
-![](https://raw.githubusercontent.com/Inspiaaa/UnityHFSM/ad3a59ad2dbcded72ef0a1fc9374a26d770f81b6/docs%7E/StateDiagrams/EnemySpyExample/Simple.png)
+![](https://raw.githubusercontent.com/ThanhDV143/Fork.Lib.UnityHFSM/master/docs%7E/StateDiagrams/EnemySpyExample/Simple.png)
 
 As you can see, the enemy will try to stay outside of the player's viewing range while extracting intel. When the player goes too far away, it will follow the player again.
 
@@ -366,7 +361,7 @@ Because the `StateMachine` class inherits from `StateBase`, it can be treated as
 
 ### Expanding on the previous example
 
-![](https://raw.githubusercontent.com/Inspiaaa/UnityHFSM/ad3a59ad2dbcded72ef0a1fc9374a26d770f81b6/docs%7E/StateDiagrams/EnemySpyExample/Hierarchical.png)
+![](https://raw.githubusercontent.com/ThanhDV143/Fork.Lib.UnityHFSM/master/docs%7E/StateDiagrams/EnemySpyExample/Hierarchical.png)
 
 In the previous example, we left the `Extract Intel` state empty. Let's change this. When extracting intel, the spy should first collect data and then send it, repeating the process once completed.
 
@@ -517,7 +512,7 @@ Let's use this feature in our example. Here's what we'll be doing:
 
 - Once all the data has been collected, it should send it out, regardless of where the player is. It does not matter if the player is too far away, as the data has already been collected. To keep it simple, let's make it that the enemy also tries to finish the sending phase, even if it risks being discovered by the player by getting to close.
 
-![](https://raw.githubusercontent.com/Inspiaaa/UnityHFSM/ad3a59ad2dbcded72ef0a1fc9374a26d770f81b6/docs%7E/StateDiagrams/EnemySpyExample/HierarchicalWithExitTransition.png)
+![](https://raw.githubusercontent.com/ThanhDV143/Fork.Lib.UnityHFSM/master/docs%7E/StateDiagrams/EnemySpyExample/HierarchicalWithExitTransition.png)
 
 ### The Implementation
 
@@ -798,7 +793,7 @@ By default, UnityHFSM uses three main events:
 - On Logic: The state machine checks the polling-based transitions and updates the active state.
 - On Exit: The state machine has switched to another state.
 
-In Unity, having one update function (on logic) is often not enough, as we sometimes want to run code in the `FixedUpdate` or `LateUpdate` calls. In UnityHFSM we can add such custom events to the state machine via the **action system**. For more information and usage instructions you can check out the complete [feature overview wiki page](https://github.com/Inspiaaa/UnityHFSM/wiki).
+In Unity, having one update function (on logic) is often not enough, as we sometimes want to run code in the `FixedUpdate` or `LateUpdate` calls. In UnityHFSM we can add such custom events to the state machine via the **action system**. For more information and usage instructions you can check out the complete [feature overview wiki page](https://github.com/ThanhDV143/Fork.Lib.UnityHFSM/wiki).
 
 ## Class-Based Architecture
 
@@ -841,7 +836,7 @@ class CustomTransition : TransitionBase
 }
 ```
 
-When developing custom state and transition classes, it's also worth understanding how UnityHFSM handles generics (see below) and how the inheritance hierarchy is structured (see the [wiki](https://github.com/Inspiaaa/UnityHFSM/wiki/State-Classes)), so that you can support custom actions (events) in your classes.
+When developing custom state and transition classes, it's also worth understanding how UnityHFSM handles generics (see below) and how the inheritance hierarchy is structured (see the [wiki](https://github.com/ThanhDV143/Fork.Lib.UnityHFSM/wiki/State-Classes)), so that you can support custom actions (events) in your classes.
 
 ## Generics
 
@@ -943,9 +938,9 @@ Here are a couple of tips and tricks you can use to debug complex state machines
 
 - Alternatively, if you prefer a more **visual approach**, you can use the **animator graph** feature. It creates an `AnimatorController` in the Unity Editor that lets you understand the structure of a state hierarchy visually. At the same time, it can show you in real-time which state the state machine is currently in.
 
-  ![Animator Graph Example](https://raw.githubusercontent.com/Inspiaaa/UnityHFSM/d679f37e70eada76f7742a53b3eed03bb6a4dfe3/docs/Images/AnimatorGraphVideo.gif)
+  ![Animator Graph Example](https://raw.githubusercontent.com/ThanhDV143/Fork.Lib.UnityHFSM/master/docs%7E/Images/AnimatorGraphVideo.gif)
 
-  You can find a tutorial on this topic in the [wiki](https://github.com/Inspiaaa/UnityHFSM/wiki/Visualising-State-Machines-with-Animator-Graphs).
+  You can find a tutorial on this topic in the [wiki](https://github.com/ThanhDV143/Fork.Lib.UnityHFSM/wiki/Visualising-State-Machines-with-Animator-Graphs).
 
 - If you are working on more advanced code and want to produce accurate information regarding the path to the current state **from within the state itself**, without having access to the root state machine, you can use the inspection-related code. The `UnityHFSM.Inspection` namespace is the foundation for dynamic tools like the animator graph feature, but can also be used for debugging (it's what is used for the built-in error messages). In particular, the `StateMachineWalker` class could be of interest:
 
@@ -957,8 +952,8 @@ Here are a couple of tips and tricks you can use to debug complex state machines
 
 # Development
 
-If you want to develop new code for UnityHFSM or contribute to the project, you can take a look at the [development wiki page](https://github.com/Inspiaaa/UnityHFSM/wiki/Development). It gives you a brief introduction to the project file structure and a short guide on how to run the unit tests.
+If you want to develop new code for UnityHFSM or contribute to the project, you can take a look at the [development wiki page](https://github.com/ThanhDV143/Fork.Lib.UnityHFSM/wiki/Development). It gives you a brief introduction to the project file structure and a short guide on how to run the unit tests.
 
 ---
 
-For more documentation check out the [Wiki](https://github.com/Inspiaaa/UnityHFSM/wiki).
+For more documentation check out the [Wiki](https://github.com/ThanhDV143/Fork.Lib.UnityHFSM/wiki).
